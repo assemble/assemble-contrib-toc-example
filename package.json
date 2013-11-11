@@ -1,0 +1,48 @@
+{
+  "name": "example-assemble-toc",
+  "description": "Example on how to use the Assemble plugin assemble-toc",
+  "version": "0.0.1",
+  "homepage": "https://github.com/assemble/example-assemble-toc",
+  "author": {
+    "name": "Brian Woodward"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/assemble/example-assemble-toc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/assemble/example-assemble-toc/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/assemble/example-assemble-toc/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "assemble": "~0.4.0",
+    "assemble-less": "~0.5.3",
+    "assemble-anchor": "~0.0.1",
+    "assemble-toc": "~0.0.1",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-watch": "~0.5.1",
+    "grunt-prettify": "~0.1.5",
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "grunt task",
+    "build",
+    "handlebars helper",
+    "underscore mixin",
+    "site generator",
+    "component generator",
+    "blog generator",
+    "handlebars",
+    "templates"
+  ]
+}

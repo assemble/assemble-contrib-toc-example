@@ -8,7 +8,7 @@
 ">
 <meta name="author" content="">
 <link rel="alternate" type="application/atom+xml" title="JavaScript Feed" href="/index.xml">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css">
 
 <title>
   JavaScript | Assemble
@@ -44,14 +44,152 @@
 </script>
 
   </head>
-  <body>
+  <body><ul><li>
+   <a href="#js-overview">Overview</a>
+</li>
+<li>
+   <a href="#js-individual-compiled">Individual or compiled</a>
+</li>
+<li>
+   <a href="#js-data-attrs">Data attributes</a>
+</li>
+<li>
+   <a href="#js-programmatic-api">Programmatic API</a>
+</li>
+<li>
+   <a href="#js-noconflict">No conflict</a>
+</li>
+<li>
+   <a href="#js-events">Events</a>
+</li>
+<li>
+   <a href="#transitions">Transitions transition.js</a>
+</li>
+<li>
+   <a href="#modals">Modals modal.js</a>
+</li>
+<li>
+   <a href="#modals-examples">Examples</a>
+</li>
+<li>
+   <a href="#myModalLabel">Modal Heading</a>
+</li>
+<li>
+   <a href="#modals-usage">Usage</a>
+</li>
+<li>
+   <a href="#dropdowns">Dropdowns dropdown.js</a>
+</li>
+<li>
+   <a href="#dropdowns-examples">Examples</a>
+</li>
+<li>
+   <a href="#dropdowns-usage">Usage</a>
+</li>
+<li>
+   <a href="#scrollspy">ScrollSpy scrollspy.js</a>
+</li>
+<li>
+   <a href="#scrollspy-examples">Example in navbar</a>
+</li>
+<li>
+   <a href="#fat">@fat</a>
+</li>
+<li>
+   <a href="#mdo">@mdo</a>
+</li>
+<li>
+   <a href="#one">one</a>
+</li>
+<li>
+   <a href="#two">two</a>
+</li>
+<li>
+   <a href="#three">three</a>
+</li>
+<li>
+   <a href="#scrollspy-usage">Usage</a>
+</li>
+<li>
+   <a href="#tabs">Togglable tabs tab.js</a>
+</li>
+<li>
+   <a href="#taexamples">Example tabs</a>
+</li>
+<li>
+   <a href="#tausage">Usage</a>
+</li>
+<li>
+   <a href="#tooltips">Tooltips tooltip.js</a>
+</li>
+<li>
+   <a href="#tooltips-examples">Examples</a>
+</li>
+<li>
+   <a href="#tooltips-usage">Usage</a>
+</li>
+<li>
+   <a href="#popovers">Popovers popover.js</a>
+</li>
+<li>
+   <a href="#popovers-examples">Examples</a>
+</li>
+<li>
+   <a href="#popovers-usage">Usage</a>
+</li>
+<li>
+   <a href="#alerts">Alert messages alert.js</a>
+</li>
+<li>
+   <a href="#alerts-examples">Example alerts</a>
+</li>
+<li>
+   <a href="#alerts-usage">Usage</a>
+</li>
+<li>
+   <a href="#buttons">Buttons button.js</a>
+</li>
+<li>
+   <a href="#buttons-examples">Example uses</a>
+</li>
+<li>
+   <a href="#buttons-usage">Usage</a>
+</li>
+<li>
+   <a href="#collapse">Collapse collapse.js</a>
+</li>
+<li>
+   <a href="#collapse-examples">Example accordion</a>
+</li>
+<li>
+   <a href="#collapse-usage">Usage</a>
+</li>
+<li>
+   <a href="#carousel">Carousel carousel.js</a>
+</li>
+<li>
+   <a href="#carousel-examples">Examples</a>
+</li>
+<li>
+   <a href="#carousel-usage">Usage</a>
+</li>
+<li>
+   <a href="#affix">Affix affix.js</a>
+</li>
+<li>
+   <a href="#affix-examples">Example</a>
+</li>
+<li>
+   <a href="#affix-usage">Usage</a>
+</li>
+</ul>
     <a class="sr-only" href="#content">Skip to main content</a>
 
     <!-- Docs master nav -->
     <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
   <div class="container">
     <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+      <button data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle" type="button">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -230,10 +368,16 @@
   ================================================== -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 id="js-overview">Overview</h1>
+      <h1 id="js-overview">Overview<a name="js-overview" class="anchor" href="#js-overview">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h1>
     </div>
 
-    <h3 id="js-individual-compiled">Individual or compiled</h3>
+    <h3 id="js-individual-compiled">Individual or compiled<a name="js-individual-compiled" class="anchor" href="#js-individual-compiled">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h3>
     <p>Plugins can be included individually (using Bootstrap's individual <code>*.js</code> files), or all at once (using <code>bootstrap.js</code> or the minified <code>bootstrap.min.js</code>).</p>
 
     <div class="callout callout-danger">
@@ -246,7 +390,10 @@
       <p>Some plugins and CSS components depend on other plugins. If you include plugins individually, make sure to check for these dependencies in the docs. Also note that all plugins depend on jQuery (this means jQuery must be included <strong>before</strong> the plugin files). <a href="https://github.com/assemble/assemble/blob/v/bower.json">Consult our <code>bower.json</code></a> to see which versions of jQuery are supported.</p>
     </div>
 
-    <h3 id="js-data-attrs">Data attributes</h3>
+    <h3 id="js-data-attrs">Data attributes<a name="js-data-attrs" class="anchor" href="#js-data-attrs">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h3>
     <p>You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first-class API and should be your first consideration when using a plugin.</p>
 
     <p>That said, in some situations it may be desirable to turn this functionality off. Therefore, we also provide the ability to disable the data attribute API by unbinding all events on the document namespaced with <code>data-api</code>. This looks like this:
@@ -255,13 +402,16 @@
 
 
 
-    <p>Alternatively, to target a specific plugin, just include the plugin's name as a namespace along with the data-api namespace like this:</p>
+    </p><p>Alternatively, to target a specific plugin, just include the plugin's name as a namespace along with the data-api namespace like this:</p>
 
 <pre><code class="language-js">$(document).off(<span class="string">'.alert.data-api'</span>)</code></pre>
 
 
 
-    <h3 id="js-programmatic-api">Programmatic API</h3>
+    <h3 id="js-programmatic-api">Programmatic API<a name="js-programmatic-api" class="anchor" href="#js-programmatic-api">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h3>
     <p>We also believe you should be able to use all Bootstrap plugins purely through the JavaScript API. All public APIs are single, chainable methods, and return the collection acted upon.</p>
 
 <pre><code class="language-js">$(<span class="string">".btn.danger"</span>).button(<span class="string">"toggle"</span>).addClass(<span class="string">"fat"</span>)</code></pre>
@@ -278,7 +428,10 @@ $(<span class="string">"#myModal"</span>).modal(<span class="string">'show'</spa
 
     <p>Each plugin also exposes its raw constructor on a <code>Constructor</code> property: <code>$.fn.popover.Constructor</code>. If you'd like to get a particular plugin instance, retrieve it directly from an element: <code>$('[rel=popover]').data('popover')</code>.</p>
 
-    <h3 id="js-noconflict">No conflict</h3>
+    <h3 id="js-noconflict">No conflict<a name="js-noconflict" class="anchor" href="#js-noconflict">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h3>
     <p>Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances, namespace collisions can occasionally occur. If this happens, you may call <code>.noConflict</code> on the plugin you wish to revert the value of.</p>
 
 <pre><code class="language-js"><span class="keyword">var</span> bootstrapButton = $.fn.button.noConflict() <span class="comment">// return $.fn.button to previously assigned value</span>
@@ -286,7 +439,10 @@ $.fn.bootstrapBtn = bootstrapButton            <span class="comment">// give $()
 
 
 
-    <h3 id="js-events">Events</h3>
+    <h3 id="js-events">Events<a name="js-events" class="anchor" href="#js-events">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h3>
     <p>Bootstrap provides custom events for most plugin's unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. <code>show</code>) is triggered at the start of an event, and its past participle form (ex. <code>shown</code>) is trigger on the completion of an action.</p>
     <p>As of 3.0.0, all Bootstrap events are namespaced.</p>
     <p>All infinitive events provide <code>preventDefault</code> functionality. This provides the ability to stop the execution of an action before it starts.</p>
@@ -309,7 +465,10 @@ $.fn.bootstrapBtn = bootstrapButton            <span class="comment">// give $()
   ================================================== -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 id="transitions">Transitions <small>transition.js</small></h1>
+      <h1 id="transitions">Transitions <small>transition.js</small><a name="transitions" class="anchor" href="#transitions">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h1>
     </div>
     <h3>About transitions</h3>
     <p>For simple transition effects, include <code>transition.js</code> once alongside the other JS files. If you're using the compiled (or minified) <code>bootstrap.js</code>, there is no need to include this&mdash;it's already there.</p>
@@ -323,10 +482,16 @@ $.fn.bootstrapBtn = bootstrapButton            <span class="comment">// give $()
   ================================================== -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 id="modals">Modals <small>modal.js</small></h1>
+      <h1 id="modals">Modals <small>modal.js</small><a name="modals" class="anchor" href="#modals">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h1>
     </div>
 
-    <h2 id="modals-examples">Examples</h2>
+    <h2 id="modals-examples">Examples<a name="modals-examples" class="anchor" href="#modals-examples">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h2>
     <p>Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.</p>
 
     <div class="callout callout-warning" id="callout-stacked-modals">
@@ -345,14 +510,14 @@ $.fn.bootstrapBtn = bootstrapButton            <span class="comment">// give $()
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <button data-dismiss="modal" type="button" class="close" aria-hidden="true">&times;</button>
               <h4 class="modal-title">Modal title</h4>
             </div>
             <div class="modal-body">
               <p>One fine body&hellip;</p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button data-dismiss="modal" type="button" class="btn btn-default">Close</button>
               <button type="button" class="btn btn-primary">Save changes</button>
             </div>
           </div><!-- /.modal-content -->
@@ -388,15 +553,18 @@ $.fn.bootstrapBtn = bootstrapButton            <span class="comment">// give $()
         <div class="modal-content">
 
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="myModalLabel">Modal Heading</h4>
+            <button data-dismiss="modal" type="button" class="close" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Modal Heading<a name="myModalLabel" class="anchor" href="#myModalLabel">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h4>
           </div>
           <div class="modal-body">
             <h4>Text in a modal</h4>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
 
             <h4>Popover in a modal</h4>
-            <p>This <a href="#" role="button" class="btn btn-default popover-test" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">button</a> should trigger a popover on click.</p>
+            <p>This <a data-content="And here's some amazing content. It's very engaging. right?" href="#" role="button" class="btn btn-default popover-test" title="A Title">button</a> should trigger a popover on click.</p>
 
             <h4>Tooltips in a modal</h4>
             <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> should have tooltips on hover.</p>
@@ -415,7 +583,7 @@ $.fn.bootstrapBtn = bootstrapButton            <span class="comment">// give $()
             <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button data-dismiss="modal" type="button" class="btn btn-default">Close</button>
             <button type="button" class="btn btn-primary">Save changes</button>
           </div>
 
@@ -424,7 +592,7 @@ $.fn.bootstrapBtn = bootstrapButton            <span class="comment">// give $()
     </div><!-- /.modal -->
 
     <div class="example" style="padding-bottom: 24px;">
-      <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+      <button data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-lg">
         Launch demo modal
       </button>
     </div><!-- /example -->
@@ -462,7 +630,10 @@ $.fn.bootstrapBtn = bootstrapButton            <span class="comment">// give $()
       <p>Additionally, you may give a description of your modal dialog with <code>aria-describedby</code> on <code>.modal</code>.</p>
     </div>
 
-    <h2 id="modals-usage">Usage</h2>
+    <h2 id="modals-usage">Usage<a name="modals-usage" class="anchor" href="#modals-usage">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h2>
     <p>The modal plugin toggles your hidden content on demand, via data attributes or JavaScript. It also adds <code>.model-open</code> to the <code>&lt;body&gt;</code> to override default scrolling behavior and generates a <code>.modal-backdrop</code> to provide a click area for dismissing shown modals when clicking outside the modal.</p>
 
     <h3>Via data attributes</h3>
@@ -601,17 +772,23 @@ $.fn.bootstrapBtn = bootstrapButton            <span class="comment">// give $()
   ================================================== -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 id="dropdowns">Dropdowns <small>dropdown.js</small></h1>
+      <h1 id="dropdowns">Dropdowns <small>dropdown.js</small><a name="dropdowns" class="anchor" href="#dropdowns">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h1>
     </div>
 
-    <h2 id="dropdowns-examples">Examples</h2>
+    <h2 id="dropdowns-examples">Examples<a name="dropdowns-examples" class="anchor" href="#dropdowns-examples">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h2>
     <p>Add dropdown menus to nearly anything with this simple plugin, including the navbar, tabs, and pills.</p>
 
     <h3>Within a navbar</h3>
     <div class="example">
       <nav id="navbar-example" class="navbar navbar-default navbar-static" role="navigation">
         <div class="navbar-header">
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+          <button data-toggle="collapse" data-target=".js-navbar-collapse" class="navbar-toggle" type="button">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -622,7 +799,7 @@ $.fn.bootstrapBtn = bootstrapButton            <span class="comment">// give $()
         <div class="collapse navbar-collapse js-navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <a data-toggle="dropdown" id="drop1" href="#" role="button" class="dropdown-toggle">Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
@@ -632,7 +809,7 @@ $.fn.bootstrapBtn = bootstrapButton            <span class="comment">// give $()
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown 2 <b class="caret"></b></a>
+              <a data-toggle="dropdown" href="#" id="drop2" role="button" class="dropdown-toggle">Dropdown 2 <b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
@@ -644,7 +821,7 @@ $.fn.bootstrapBtn = bootstrapButton            <span class="comment">// give $()
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li id="fat-menu" class="dropdown">
-              <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown 3 <b class="caret"></b></a>
+              <a data-toggle="dropdown" href="#" id="drop3" role="button" class="dropdown-toggle">Dropdown 3 <b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
@@ -663,7 +840,7 @@ $.fn.bootstrapBtn = bootstrapButton            <span class="comment">// give $()
       <ul class="nav nav-pills">
         <li class="active"><a href="#">Regular link</a></li>
         <li class="dropdown">
-          <a id="drop4" role="button" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+          <a data-toggle="dropdown" id="drop4" role="button" href="#">Dropdown <b class="caret"></b></a>
           <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
             <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
@@ -673,7 +850,7 @@ $.fn.bootstrapBtn = bootstrapButton            <span class="comment">// give $()
           </ul>
         </li>
         <li class="dropdown">
-          <a id="drop5" role="button" data-toggle="dropdown" href="#">Dropdown 2 <b class="caret"></b></a>
+          <a data-toggle="dropdown" id="drop5" role="button" href="#">Dropdown 2 <b class="caret"></b></a>
           <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
             <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
@@ -683,7 +860,7 @@ $.fn.bootstrapBtn = bootstrapButton            <span class="comment">// give $()
           </ul>
         </li>
         <li class="dropdown">
-          <a id="drop6" role="button" data-toggle="dropdown" href="#">Dropdown 3 <b class="caret"></b></a>
+          <a data-toggle="dropdown" id="drop6" role="button" href="#">Dropdown 3 <b class="caret"></b></a>
           <ul id="menu3" class="dropdown-menu" role="menu" aria-labelledby="drop6">
             <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Action</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="http://twitter.com/fat">Another action</a></li>
@@ -696,7 +873,10 @@ $.fn.bootstrapBtn = bootstrapButton            <span class="comment">// give $()
     </div> <!-- /example -->
 
 
-    <h2 id="dropdowns-usage">Usage</h2>
+    <h2 id="dropdowns-usage">Usage<a name="dropdowns-usage" class="anchor" href="#dropdowns-usage">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h2>
     <p>Via data attributes or JavaScript, the dropdown plugin toggles hidden content (dropdown menus) by toggling the <code>.open</code> class on the parent list item. When opened, the plugin also adds <code>.dropdown-backdrop</code> as a click area for closing dropdown menus when clicking outside the menu.</p>
 
     <h3>Via data attributes</h3>
@@ -780,16 +960,22 @@ $.fn.bootstrapBtn = bootstrapButton            <span class="comment">// give $()
   ================================================== -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 id="scrollspy">ScrollSpy <small>scrollspy.js</small></h1>
+      <h1 id="scrollspy">ScrollSpy <small>scrollspy.js</small><a name="scrollspy" class="anchor" href="#scrollspy">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h1>
     </div>
 
 
-    <h2 id="scrollspy-examples">Example in navbar</h2>
+    <h2 id="scrollspy-examples">Example in navbar<a name="scrollspy-examples" class="anchor" href="#scrollspy-examples">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h2>
     <p>The ScrollSpy plugin is for automatically updating nav targets based on scroll position. Scroll the area below the navbar and watch the active class change. The dropdown sub items will be highlighted as well.</p>
     <div class="example">
       <nav id="navbar-example2" class="navbar navbar-default navbar-static" role="navigation">
         <div class="navbar-header">
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-scrollspy">
+          <button data-toggle="collapse" data-target=".js-navbar-scrollspy" class="navbar-toggle" type="button">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -802,7 +988,7 @@ $.fn.bootstrapBtn = bootstrapButton            <span class="comment">// give $()
             <li><a href="#fat">@fat</a></li>
             <li><a href="#mdo">@mdo</a></li>
             <li class="dropdown">
-              <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <a data-toggle="dropdown" href="#" id="navbarDrop1" class="dropdown-toggle">Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu" aria-labelledby="navbarDrop1">
                 <li><a href="#one" tabindex="-1">one</a></li>
                 <li><a href="#two" tabindex="-1">two</a></li>
@@ -814,15 +1000,30 @@ $.fn.bootstrapBtn = bootstrapButton            <span class="comment">// give $()
         </div>
       </nav>
       <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
-        <h4 id="fat">@fat</h4>
+        <h4 id="fat">@fat<a name="fat" class="anchor" href="#fat">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h4>
         <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
-        <h4 id="mdo">@mdo</h4>
+        <h4 id="mdo">@mdo<a name="mdo" class="anchor" href="#mdo">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h4>
         <p>Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.</p>
-        <h4 id="one">one</h4>
+        <h4 id="one">one<a name="one" class="anchor" href="#one">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h4>
         <p>Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.</p>
-        <h4 id="two">two</h4>
+        <h4 id="two">two<a name="two" class="anchor" href="#two">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h4>
         <p>In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.</p>
-        <h4 id="three">three</h4>
+        <h4 id="three">three<a name="three" class="anchor" href="#three">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h4>
         <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
         <p>Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
         </p>
@@ -830,7 +1031,10 @@ $.fn.bootstrapBtn = bootstrapButton            <span class="comment">// give $()
     </div><!-- /example -->
 
 
-    <h2 id="scrollspy-usage">Usage</h2>
+    <h2 id="scrollspy-usage">Usage<a name="scrollspy-usage" class="anchor" href="#scrollspy-usage">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h2>
 
     <h3>Via data attributes</h3>
     <p>To easily add scrollspy behavior to your topbar navigation, add <code>data-spy="scroll"</code> to the element you want to spy on (most typically this would be the <code>&lt;body&gt;</code>). Then add the <code>data-target</code> attribute with the ID or class of the parent element of any Bootstrap <code>.nav</code> component.</p>
@@ -918,20 +1122,26 @@ $.fn.bootstrapBtn = bootstrapButton            <span class="comment">// give $()
   ================================================== -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 id="tabs">Togglable tabs <small>tab.js</small></h1>
+      <h1 id="tabs">Togglable tabs <small>tab.js</small><a name="tabs" class="anchor" href="#tabs">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h1>
     </div>
 
-    <h2 id="taexamples">Example tabs</h2>
+    <h2 id="taexamples">Example tabs<a name="taexamples" class="anchor" href="#taexamples">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h2>
     <p>Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus.</p>
     <div class="example example-tabs">
       <ul id="myTab" class="nav nav-tabs">
-        <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-        <li><a href="#profile" data-toggle="tab">Profile</a></li>
+        <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+        <li><a data-toggle="tab" href="#profile">Profile</a></li>
         <li class="dropdown">
-          <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <a data-toggle="dropdown" href="#" id="myTabDrop1" class="dropdown-toggle">Dropdown <b class="caret"></b></a>
           <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
-            <li><a href="#dropdown1" tabindex="-1" data-toggle="tab">@fat</a></li>
-            <li><a href="#dropdown2" tabindex="-1" data-toggle="tab">@mdo</a></li>
+            <li><a data-toggle="tab" href="#dropdown1" tabindex="-1">@fat</a></li>
+            <li><a data-toggle="tab" href="#dropdown2" tabindex="-1">@mdo</a></li>
           </ul>
         </li>
       </ul>
@@ -957,7 +1167,10 @@ $.fn.bootstrapBtn = bootstrapButton            <span class="comment">// give $()
     </div>
 
 
-    <h2 id="tausage">Usage</h2>
+    <h2 id="tausage">Usage<a name="tausage" class="anchor" href="#tausage">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h2>
     <p>Enable tabbable tabs via JavaScript (each tab needs to be activated individually):</p>
 
 <pre><code class="language-js">$(<span class="string">'#myTab a'</span>).click(<span class="function"><span class="keyword">function</span> <span class="params">(e)</span> {</span>
@@ -1073,24 +1286,30 @@ $(<span class="string">'#myTab li:eq(2) a'</span>).tab(<span class="string">'sho
   ================================================== -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 id="tooltips">Tooltips <small>tooltip.js</small></h1>
+      <h1 id="tooltips">Tooltips <small>tooltip.js</small><a name="tooltips" class="anchor" href="#tooltips">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h1>
     </div>
 
-    <h2 id="tooltips-examples">Examples</h2>
+    <h2 id="tooltips-examples">Examples<a name="tooltips-examples" class="anchor" href="#tooltips-examples">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h2>
     <p>Inspired by the excellent jQuery.tipsy plugin written by Jason Frame; Tooltips are an updated version, which don't rely on images, use CSS3 for animations, and data-attributes for local title storage.</p>
     <p>Hover over the links below to see tooltips:</p>
     <div class="example tooltip-demo">
-      <p class="muted" style="margin-bottom: 0;">Tight pants next level keffiyeh <a href="#" data-toggle="tooltip" title="Default tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a href="#" data-toggle="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan <a href="#" data-toggle="tooltip" title="Another one here too">whatever keytar</a>, scenester farm-to-table banksy Austin <a href="#" data-toggle="tooltip" title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral.
+      <p class="muted" style="margin-bottom: 0;">Tight pants next level keffiyeh <a data-toggle="tooltip" href="#" title="Default tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a data-toggle="tooltip" href="#" title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan <a data-toggle="tooltip" href="#" title="Another one here too">whatever keytar</a>, scenester farm-to-table banksy Austin <a data-toggle="tooltip" href="#" title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral.
       </p>
     </div><!-- /example -->
 
     <h3>Four directions</h3>
     <div class="example tooltip-demo">
       <div class="example-tooltips">
-        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
-        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
-        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
-        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+        <button data-toggle="tooltip" data-placement="left" type="button" class="btn btn-default" title="Tooltip on left">Tooltip on left</button>
+        <button data-toggle="tooltip" data-placement="top" type="button" class="btn btn-default" title="Tooltip on top">Tooltip on top</button>
+        <button data-toggle="tooltip" data-placement="bottom" type="button" class="btn btn-default" title="Tooltip on bottom">Tooltip on bottom</button>
+        <button data-toggle="tooltip" data-placement="right" type="button" class="btn btn-default" title="Tooltip on right">Tooltip on right</button>
       </div>
     </div><!-- /example -->
 
@@ -1107,7 +1326,10 @@ $(<span class="string">'#myTab li:eq(2) a'</span>).tab(<span class="string">'sho
       <p>To add a tooltip to a <code>disabled</code> or <code>.disabled</code> element, put the element inside of a <code>&lt;div&gt;</code> and apply the tooltip to that <code>&lt;div&gt;</code> instead.</p>
     </div>
 
-    <h2 id="tooltips-usage">Usage</h2>
+    <h2 id="tooltips-usage">Usage<a name="tooltips-usage" class="anchor" href="#tooltips-usage">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h2>
     <p>The tooltip plugin generates content and markup on demand, and by default places tooltips after their trigger element.</p>
     <p>Trigger the tooltip via JavaScript:</p>
 
@@ -1282,10 +1504,16 @@ $(<span class="string">'#myTab li:eq(2) a'</span>).tab(<span class="string">'sho
   ================================================== -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 id="popovers">Popovers <small>popover.js</small></h1>
+      <h1 id="popovers">Popovers <small>popover.js</small><a name="popovers" class="anchor" href="#popovers">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h1>
     </div>
 
-    <h2 id="popovers-examples">Examples</h2>
+    <h2 id="popovers-examples">Examples<a name="popovers-examples" class="anchor" href="#popovers-examples">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h2>
     <p>Add small overlays of content, like those on the iPad, to any element for housing secondary information.</p>
 
     <div class="callout callout-danger">
@@ -1346,29 +1574,32 @@ $(<span class="string">'#myTab li:eq(2) a'</span>).tab(<span class="string">'sho
 
     <h3>Live demo</h3>
     <div class="example" style="padding-bottom: 24px;">
-      <a href="#" class="btn btn-lg btn-danger" data-toggle="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?" role="button">Click to toggle popover</a>
+      <a data-toggle="popover" data-content="And here's some amazing content. It's very engaging. right?" href="#" class="btn btn-lg btn-danger" title="A Title" role="button">Click to toggle popover</a>
     </div>
 
     <h4>Four directions</h4>
     <div class="example tooltip-demo">
       <div class="example-tooltips">
-        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        <button data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." type="button" class="btn btn-default">
           Popover on left
         </button>
-        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        <button data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." type="button" class="btn btn-default">
           Popover on top
         </button>
-        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        <button data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." type="button" class="btn btn-default">
           Popover on bottom
         </button>
-        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+        <button data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." type="button" class="btn btn-default">
           Popover on right
         </button>
       </div>
     </div><!-- /example -->
 
 
-    <h2 id="popovers-usage">Usage</h2>
+    <h2 id="popovers-usage">Usage<a name="popovers-usage" class="anchor" href="#popovers-usage">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h2>
     <p>Enable popovers via JavaScript:</p>
 
 <p><code>js$(&#39;#example&#39;).popover(options)</code></p>
@@ -1528,22 +1759,28 @@ $(<span class="string">'#myTab li:eq(2) a'</span>).tab(<span class="string">'sho
   ================================================== -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 id="alerts">Alert messages <small>alert.js</small></h1>
+      <h1 id="alerts">Alert messages <small>alert.js</small><a name="alerts" class="anchor" href="#alerts">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h1>
     </div>
 
 
-    <h2 id="alerts-examples">Example alerts</h2>
+    <h2 id="alerts-examples">Example alerts<a name="alerts-examples" class="anchor" href="#alerts-examples">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h2>
     <p>Add dismiss functionality to all alert messages with this plugin.</p>
     <div class="example">
       <div class="alert alert-warning fade in">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <button data-dismiss="alert" type="button" class="close" aria-hidden="true">&times;</button>
         <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
       </div>
     </div><!-- /example -->
 
     <div class="example">
       <div class="alert alert-danger fade in">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <button data-dismiss="alert" type="button" class="close" aria-hidden="true">&times;</button>
         <h4>Oh snap! You got an error!</h4>
         <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
         <p>
@@ -1554,7 +1791,10 @@ $(<span class="string">'#myTab li:eq(2) a'</span>).tab(<span class="string">'sho
     </div><!-- /example -->
 
 
-    <h2 id="alerts-usage">Usage</h2>
+    <h2 id="alerts-usage">Usage<a name="alerts-usage" class="anchor" href="#alerts-usage">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h2>
     <p>Enable dismissal of an alert via JavaScript:</p>
 
 <p><code>js$(&quot;.alert&quot;).alert()</code></p>
@@ -1617,16 +1857,22 @@ $(<span class="string">'#myTab li:eq(2) a'</span>).tab(<span class="string">'sho
   ================================================== -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 id="buttons">Buttons <small>button.js</small></h1>
+      <h1 id="buttons">Buttons <small>button.js</small><a name="buttons" class="anchor" href="#buttons">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h1>
     </div>
 
-    <h2 id="buttons-examples">Example uses</h2>
+    <h2 id="buttons-examples">Example uses<a name="buttons-examples" class="anchor" href="#buttons-examples">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h2>
     <p>Do more with buttons. Control button states or create groups of buttons for more components like toolbars.</p>
 
     <h4>Stateful</h4>
     <p>Add <code>data-loading-text="Loading..."</code> to use a loading state on a button.</p>
     <div class="example" style="padding-bottom: 24px;">
-      <button type="button" id="fat-btn" data-loading-text="Loading..." class="btn btn-primary">
+      <button data-loadingtext="Loading..." type="button" id="fat-btn" class="btn btn-primary">
         Loading state
       </button>
     </div><!-- /example -->
@@ -1640,7 +1886,7 @@ $(<span class="string">'#myTab li:eq(2) a'</span>).tab(<span class="string">'sho
     <h4>Single toggle</h4>
     <p>Add <code>data-toggle="button"</code> to activate toggling on a single button.</p>
     <div class="example" style="padding-bottom: 24px;">
-      <button type="button" class="btn btn-primary" data-toggle="button">Single toggle</button>
+      <button data-toggle="button" type="button" class="btn btn-primary">Single toggle</button>
     </div><!-- /example -->
 
 <pre><code class="language-html">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-toggle=&quot;button&quot;&gt;Single toggle&lt;/button&gt;</code></pre>
@@ -1650,7 +1896,7 @@ $(<span class="string">'#myTab li:eq(2) a'</span>).tab(<span class="string">'sho
     <h4>Checkbox</h4>
     <p>Add <code>data-toggle="buttons"</code> to a group of checkboxes for checkbox style toggling on btn-group.</p>
     <div class="example" style="padding-bottom: 24px;">
-      <div class="btn-group" data-toggle="buttons">
+      <div data-toggle="buttons" class="btn-group">
         <label class="btn btn-primary">
           <input type="checkbox"> Option 1
         </label>
@@ -1680,7 +1926,7 @@ $(<span class="string">'#myTab li:eq(2) a'</span>).tab(<span class="string">'sho
     <h4>Radio</h4>
     <p>Add <code>data-toggle="buttons"</code> to a group of radio inputs for radio style toggling on btn-group.</p>
     <div class="example" style="padding-bottom: 24px;">
-      <div class="btn-group" data-toggle="buttons">
+      <div data-toggle="buttons" class="btn-group">
         <label class="btn btn-primary">
           <input type="radio" name="options" id="option1"> Option 1
         </label>
@@ -1708,7 +1954,10 @@ $(<span class="string">'#myTab li:eq(2) a'</span>).tab(<span class="string">'sho
 
 
 
-    <h2 id="buttons-usage">Usage</h2>
+    <h2 id="buttons-usage">Usage<a name="buttons-usage" class="anchor" href="#buttons-usage">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h2>
     <p>Enable buttons via JavaScript:</p>
 
 <pre><code class="language-js">$(<span class="string">'.btn-group'</span>).button()</code></pre>
@@ -1767,7 +2016,10 @@ $(<span class="string">'#myTab li:eq(2) a'</span>).tab(<span class="string">'sho
   ================================================== -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 id="collapse">Collapse <small>collapse.js</small></h1>
+      <h1 id="collapse">Collapse <small>collapse.js</small><a name="collapse" class="anchor" href="#collapse">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h1>
     </div>
 
     <h3>About</h3>
@@ -1778,7 +2030,10 @@ $(<span class="string">'#myTab li:eq(2) a'</span>).tab(<span class="string">'sho
       <p>Collapse requires the <a href="#transitions">transitions plugin</a> to be included in your version of Bootstrap.</p>
     </div>
 
-    <h2 id="collapse-examples">Example accordion</h2>
+    <h2 id="collapse-examples">Example accordion<a name="collapse-examples" class="anchor" href="#collapse-examples">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h2>
     <p>Using the collapse plugin, we built a simple accordion by extending the panel component.</p>
 
     <div class="example">
@@ -1886,7 +2141,10 @@ $(<span class="string">'#myTab li:eq(2) a'</span>).tab(<span class="string">'sho
 
 
 
-    <h2 id="collapse-usage">Usage</h2>
+    <h2 id="collapse-usage">Usage<a name="collapse-usage" class="anchor" href="#collapse-usage">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h2>
     <p>The collapse plugin utilizes a few classes to handle the heavy lifting:</p>
     <ul>
       <li><code>.collapse</code> hides the content</li>
@@ -1947,7 +2205,7 @@ $(<span class="string">'#myTab li:eq(2) a'</span>).tab(<span class="string">'sho
 
 
     <h4>.collapse('toggle')</h4>
-    <p>Toggles a collapsible element to shown or hidden.</p>
+    </p><p>Toggles a collapsible element to shown or hidden.</p>
 
     <h4>.collapse('show')</h4>
     <p>Shows a collapsible element.</p>
@@ -2001,17 +2259,23 @@ $(<span class="string">'#myTab li:eq(2) a'</span>).tab(<span class="string">'sho
   ================================================== -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 id="carousel">Carousel <small>carousel.js</small></h1>
+      <h1 id="carousel">Carousel <small>carousel.js</small><a name="carousel" class="anchor" href="#carousel">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h1>
     </div>
 
-    <h2 id="carousel-examples">Examples</h2>
+    <h2 id="carousel-examples">Examples<a name="carousel-examples" class="anchor" href="#carousel-examples">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h2>
     <p>The slideshow below shows a generic plugin and component for cycling through elements like a carousel.</p>
     <div class="example">
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <div data-ride="carousel" id="carousel-example-generic" class="carousel slide">
         <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          <li data-target="#carousel-example-generic" data-slideto="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slideto="1" ></li>
+          <li data-target="#carousel-example-generic" data-slideto="2" ></li>
         </ol>
         <div class="carousel-inner">
           <div class="item active">
@@ -2024,10 +2288,10 @@ $(<span class="string">'#myTab li:eq(2) a'</span>).tab(<span class="string">'sho
             <img data-src="holder.js/900x500/auto/#555:#333/text:Third slide" alt="Third slide">
           </div>
         </div>
-        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <a data-slide="prev" class="left carousel-control" href="#carousel-example-generic">
           <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
-        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <a data-slide="next" class="right carousel-control" href="#carousel-example-generic">
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
       </div>
@@ -2070,11 +2334,11 @@ $(<span class="string">'#myTab li:eq(2) a'</span>).tab(<span class="string">'sho
     <h3>Optional captions</h3>
     <p>Add captions to your slides easily with the <code>.carousel-caption</code> element within any <code>.item</code>. Place just about any optional HTML within there and it will be automatically aligned and formatted.</p>
     <div class="example">
-      <div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
+      <div data-ride="carousel" id="carousel-example-captions" class="carousel slide">
         <ol class="carousel-indicators">
-          <li data-target="#carousel-example-captions" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-captions" data-slide-to="1"></li>
-          <li data-target="#carousel-example-captions" data-slide-to="2"></li>
+          <li data-target="#carousel-example-captions" data-slideto="0" class="active"></li>
+          <li data-target="#carousel-example-captions" data-slideto="1" ></li>
+          <li data-target="#carousel-example-captions" data-slideto="2" ></li>
         </ol>
         <div class="carousel-inner">
           <div class="item active">
@@ -2099,10 +2363,10 @@ $(<span class="string">'#myTab li:eq(2) a'</span>).tab(<span class="string">'sho
             </div>
           </div>
         </div>
-        <a class="left carousel-control" href="#carousel-example-captions" data-slide="prev">
+        <a data-slide="prev" class="left carousel-control" href="#carousel-example-captions">
           <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
-        <a class="right carousel-control" href="#carousel-example-captions" data-slide="next">
+        <a data-slide="next" class="right carousel-control" href="#carousel-example-captions">
           <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
       </div>
@@ -2123,7 +2387,10 @@ $(<span class="string">'#myTab li:eq(2) a'</span>).tab(<span class="string">'sho
   <p>The carousel component is generally not compliant with accessibility standards. If you need to be compliant, please consider other options for presenting your content.</p>
 </div>
 
-    <h2 id="carousel-usage">Usage</h2>
+    <h2 id="carousel-usage">Usage<a name="carousel-usage" class="anchor" href="#carousel-usage">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h2>
 
     <h3>Via data attributes</h3>
     <p>Use data attributes to easily control the position of the carousel. <code>data-slide</code> accepts the keywords <code>prev</code> or <code>next</code>, which alters the slide position relative to its current position. Alternatively, use <code>data-slide-to</code> to pass a raw slide index to the carousel <code>data-slide-to="2"</code>, which shifts the slide position to a particular index beginning with <code>0</code>.</p>
@@ -2234,15 +2501,24 @@ $(<span class="string">'#myTab li:eq(2) a'</span>).tab(<span class="string">'sho
   ================================================== -->
   <div class="docs-section">
     <div class="page-header">
-      <h1 id="affix">Affix <small>affix.js</small></h1>
+      <h1 id="affix">Affix <small>affix.js</small><a name="affix" class="anchor" href="#affix">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h1>
     </div>
 
-    <h2 id="affix-examples">Example</h2>
+    <h2 id="affix-examples">Example<a name="affix-examples" class="anchor" href="#affix-examples">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h2>
     <p>The subnavigation on the left is a live demo of the affix plugin.</p>
 
     <hr class="docs-separator">
 
-    <h2 id="affix-usage">Usage</h2>
+    <h2 id="affix-usage">Usage<a name="affix-usage" class="anchor" href="#affix-usage">
+  <span class="glyphicon glyphicon-link"></span>
+</a>
+</h2>
 
     <h3>Via data attributes</h3>
     <p>To easily add affix behavior to any element, just add <code>data-spy="affix"</code> to the element you want to spy on. Then use offsets to define when to toggle the pinning of an element on and off.</p>

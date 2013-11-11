@@ -1,6 +1,3 @@
 {
-  "name": "example-assemble-toc",
-  "dependencies": {
-    "bootstrap": "twitter/bootstrap"
-  }
+  "name": "example-assemble-toc"
 }

@@ -1,6 +1,6 @@
 /*
  * example-assemble-toc
- * https://github.com/Brian Woodward/example-assemble-toc
+ * https://github.com/assemble/example-assemble-toc
  * Copyright (c) 2013
  * Licensed under the MIT license.
  */
@@ -8,128 +8,39 @@
 'use strict';
 
 module.exports = function(grunt) {
-  grunt.util._.mixin(require('./src/helpers/mixins.js').init(grunt));
 
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     vendor: grunt.file.readJSON('.bowerrc').directory,
-
-    // Lint JavaScript
-    jshint: {
-      all: ['Gruntfile.js', 'src/helpers/*.js'],
-      options: {
-        jshintrc: '.jshintrc'
-      }
-    },
+    site: grunt.file.readYAML('_config.yml'),
 
     // Build HTML from templates and data
     assemble: {
       options: {
-        // Change stylesheet to "assemble" or "bootstrap"
-        stylesheet: 'assemble',
         flatten: true,
-        assets: 'docs/assets',
-        partials: ['src/includes/*.hbs'],
-        helpers: ['src/helpers/helper-*.js'],
-        plugins: ['assemble-anchor', 'assemble-toc'],
-        layout: 'src/layouts/default.hbs',
-        data: ['src/data/*.{json,yml}', 'package.json']
+        site: '<%= site %>',
+        assets: '_gh_pages/assets',
+        partials: ['templates/includes/*.hbs'],
+        plugins: ['assemble-contrib-anchors', 'assemble-contrib-toc'],
+        layouts: 'templates/layouts',
       },
-      pages: {
-        src: 'src/*.hbs',
-        dest: 'docs/'
-      }
-    },
-
-    // Compile LESS to CSS
-    less: {
-      options: {
-        paths: '<%= vendor %>/bootstrap/less',
-        imports: {
-          reference: ['mixins.less', 'variables.less']
-        }
-      },
-      // Compile Bootstrap's LESS
-      bootstrap: {
-        src: [
-          '<%= vendor %>/bootstrap/less/bootstrap.less',
-          '<%= vendor %>/bootstrap/docs/assets/css/docs.css'
-        ],
-        dest: '<%= assemble.options.assets %>/bootstrap.css'
-      },
-      // Example for compiling a single component
-      alerts: {
-        src: '<%= vendor %>/bootstrap/less/alerts.less',
-        dest: '<%= assemble.options.assets %>/alerts.css'
-      },
-      // Example for compiling all components
-      components: {
-        options: {concat: false},
-        src: [
-          '<%= vendor %>/bootstrap/less/*.less',
-          '!<%= vendor %>/bootstrap/less/{variables,mixins,bootstrap}.less'
-        ],
-        dest: '<%= assemble.options.assets %>/components/'
-      }
-    },
-
-    // Prettify test HTML pages from Assemble task.
-    prettify: {
-      options: {
-        prettifyrc: '.prettifyrc'
-      },
-      all: {
-        expand: true,
-        cwd: '<%= assemble.pages.src %>/',
-        src: ['*.html'],
-        dest: '<%= assemble.pages.src %>/',
-        ext: '.html'
+      example: {
+        files: {'_gh_pages/': ['templates/*.hbs']}
       }
     },
 
     // Before generating any new files,
     // remove any previously-created files.
     clean: {
-      example: ['docs/*.html']
-    },
-
-    watch: {
-      all: {
-        files: ['<%= jshint.all %>'],
-        tasks: ['jshint', 'nodeunit']
-      },
-      design: {
-        files: ['Gruntfile.js', '<%= less.options.paths %>/*.less', 'src/**/*.hbs'],
-        tasks: ['design']
-      }
+      example: ['_gh_pages/*.html']
     }
   });
 
   // Load npm plugins to provide necessary tasks.
-  grunt.loadNpmTasks('assemble');
-  grunt.loadNpmTasks('assemble-less');
-  grunt.loadNpmTasks('grunt-prettify');
   grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('assemble');
 
   // Default tasks to be run.
-  grunt.registerTask('default', [
-    'clean',
-    'jshint',
-    'assemble',
-    'prettify'
-  ]);
-
-  // Build HTML, compile LESS and watch for changes.
-  // You must first run "bower install" or install
-  // Bootstrap to the "vendor" directory before running
-  // this command.
-  grunt.registerTask('design', [
-    'clean',
-    'assemble',
-    'less:bootstrap',
-    'watch:design'
-  ]);
+  grunt.registerTask('default', ['clean', 'assemble']);
 };

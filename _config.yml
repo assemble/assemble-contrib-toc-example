@@ -17,6 +17,7 @@ license:
 
 # URLs
 repo: https://github.com/assemble/assemble
+blog: http://assemble.io/blog/
 download:
   source: https://github.com/assemble/assemble/archive/master.zip
 

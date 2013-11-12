@@ -9,6 +9,8 @@
 
 module.exports = function(grunt) {
 
+  var pretty = require('pretty');
+
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -24,6 +26,7 @@ module.exports = function(grunt) {
         partials: ['templates/includes/*.hbs'],
         plugins: ['assemble-contrib-anchors', 'assemble-contrib-toc'],
         layouts: 'templates/layouts',
+        postprocess: pretty
       },
       example: {
         files: {'_gh_pages/': ['templates/*.hbs']}
